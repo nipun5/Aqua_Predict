@@ -48,9 +48,9 @@ def save_metrics(metrics: dict, filepath: str) -> None:
     
 def main():
     try:
-        test_data_path = 'C:/Users/jainn/OneDrive/Documents/AquaPredict/data/preprocessed/test_data_preprocessed.csv'
-        model_path = 'C:/Users/jainn/OneDrive/Documents/AquaPredict/model.pkl'
-        metrics_path = 'C:/Users/jainn/OneDrive/Documents/AquaPredict/metrics.json'
+        test_data_path = './data/preprocessed/test_data_preprocessed.csv'
+        model_path = 'models/model.pkl'
+        metrics_path = 'reports/metrics.json'
         test_data = load_data(test_data_path)
         X_test, y_test = prepare_data(test_data)
         model = load_model(model_path)

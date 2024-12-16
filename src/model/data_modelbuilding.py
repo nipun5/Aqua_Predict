@@ -45,9 +45,9 @@ def save_model(model: RandomForestClassifier, filepath: str) -> None:
 
 def main():
     try:
-        params_path = 'C:/Users/jainn/OneDrive/Documents/AquaPredict/params.yaml'
-        data_preprocessed_path = 'C:/Users/jainn/OneDrive/Documents/AquaPredict/data/preprocessed/train_data_preprocessed.csv'
-        model_name = 'model.pkl'
+        params_path = 'params.yaml'
+        data_preprocessed_path = './data/preprocessed/train_data_preprocessed.csv'
+        model_name = 'models/model.pkl'
         n_estimators = load_params(params_path)
         train_data = load_data(data_preprocessed_path)
         X_train, y_train = prepare_data(train_data)

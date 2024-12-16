@@ -32,8 +32,8 @@ def save_data(df: pd.DataFrame, filepath: str) -> None:
         raise Exception(f"Failed to save data: {filepath}:{e}") 
 
 def main():
-    data_filepath = "C:/Users/jainn/OneDrive/Documents/AquaPredict/water_potability.csv"
-    params_filepath = "C:/Users/jainn/OneDrive/Documents/AquaPredict/params.yaml"
+    data_filepath = "water_potability.csv"
+    params_filepath = "params.yaml"
     raw_data_path = os.path.join('data', 'raw')
     try:
         data = load_data(data_filepath)

@@ -27,7 +27,7 @@ def save_data(df: pd.DataFrame, filepath: str) -> None:
         raise Exception(f"Failed to save data: {e}")
 
 def main():
-    raw_data_path = 'C:/Users/jainn/OneDrive/Documents/AquaPredict/data/raw'
+    raw_data_path = './data/raw'
     train_data = load_data(raw_data_path, 'train_data.csv')
     test_data = load_data(raw_data_path, 'test_data.csv')
     try:
